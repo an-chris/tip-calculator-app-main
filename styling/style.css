@@ -16,5 +16,11 @@ html {
 
 body {
   font-family: 'Space Mono', sans-serif;
+  background-color: #c5e4e7;
+}
+
+.logo {
+  display: block;
+  margin: 4rem auto;
 }
 /*# sourceMappingURL=style.css.map */
