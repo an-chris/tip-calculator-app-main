@@ -19,8 +19,8 @@ body {
   background-color: #c5e4e7;
 }
 
-.logo {
-  display: block;
+.heading {
   margin: 4rem auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
