@@ -69,6 +69,10 @@ body {
       color: $light-cyan;
       text-align: left;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   
