@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Space+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Space Mono', sans-serif;
+  font-family: 'Space Mono', serif;
   background-color: #c5e4e7;
 }
 
@@ -27,6 +27,45 @@ body {
 .main {
   background-color: white;
   padding: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.input__bill-title {
+  color: #00494d;
+}
+
+.input__bill {
+  border: none;
+  background-color: #f4fafa;
+  padding: 1rem;
+  width: 85%;
+  display: block;
+  margin: .75rem 0;
+  text-align: right;
+  color: #00494d;
+  font-size: 2rem;
+  font-family: 'Space Mono' serif;
+  font-weight: 700;
+}
+
+.input__bill::-webkit-input-placeholder {
+  color: #c5e4e7;
+  text-align: left;
+}
+
+.input__bill:-ms-input-placeholder {
+  color: #c5e4e7;
+  text-align: left;
+}
+
+.input__bill::-ms-input-placeholder {
+  color: #c5e4e7;
+  text-align: left;
+}
+
+.input__bill::placeholder {
+  color: #c5e4e7;
+  text-align: left;
 }
 
 .attribution {
