@@ -28,9 +28,10 @@ body {
   background-color: white;
   padding: 2.5rem;
   font-size: 1.25rem;
+  letter-spacing: .1rem;
 }
 
-.input__bill-title {
+.input {
   color: #00494d;
 }
 
@@ -44,32 +45,98 @@ body {
   text-align: right;
   color: #00494d;
   font-size: 2rem;
-  font-family: 'Space Mono' serif;
+  font-family: inherit;
   font-weight: 700;
 }
 
 .input__bill::-webkit-input-placeholder {
   color: #c5e4e7;
+  font-size: 2.5rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .input__bill:-ms-input-placeholder {
   color: #c5e4e7;
+  font-size: 2.5rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .input__bill::-ms-input-placeholder {
   color: #c5e4e7;
+  font-size: 2.5rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .input__bill::placeholder {
   color: #c5e4e7;
+  font-size: 2.5rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .input__bill:focus {
   outline: none;
+}
+
+.input__tip-title {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.input__tip-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: (calc(50% - 1rem))[2];
+      grid-template-columns: repeat(2, calc(50% - 1rem));
+  gap: 2rem;
+}
+
+.input__tip-buttons {
+  font-size: 2rem;
+  border: none;
+  background-color: #00494d;
+  color: white;
+  border-radius: 4px;
+  padding: .8rem;
+  letter-spacing: .1rem;
+  font-family: inherit;
+}
+
+.input__tip-buttons:active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.input__tip-custom {
+  text-align: right;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 2rem;
+  border: none;
+  background-color: #f4fafa;
+  font-weight: bold;
+}
+
+.input__tip-custom::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+.input__tip-custom:-ms-input-placeholder {
+  color: #00494d;
+}
+
+.input__tip-custom::-ms-input-placeholder {
+  color: #00494d;
+}
+
+.input__tip-custom::placeholder {
+  color: #00494d;
 }
 
 .attribution {

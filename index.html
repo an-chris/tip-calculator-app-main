@@ -18,13 +18,22 @@
     <header class="heading">
       <img src="images/logo.svg" alt="splitter logo" class="heading__logo" />
     </header>
+
     <main class="main">
       <section class="input">
         <h3 class="input__bill-title">Bill</h3>
-        <input type="text" class="input__bill" placeholder="$">
-
-       Select Tip % 5% 10% 15% 25% 50% Custom
+        <input type="text" class="input__bill" placeholder="$" />
+        <h3 class="input__tip-title">Select Tip %</h3>
+        <div class="input__tip-container">
+          <button class="input__tip-buttons">5%</button>
+          <button class="input__tip-buttons">10%</button>
+          <button class="input__tip-buttons">15%</button>
+          <button class="input__tip-buttons">25%</button>
+          <button class="input__tip-buttons">50%</button>
+          <input type="text" class="input__tip-custom" placeholder="Custom">
+        </div>
       </section>
+      
       <section class="amount">
         Number of People Tip Amount / person Total / person Reset
       </section>
