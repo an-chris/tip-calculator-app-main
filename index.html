@@ -22,7 +22,7 @@
     <main class="main">
       <section class="input">
         <h3 class="input__bill-title">Bill</h3>
-        <input type="text" class="input__bill" placeholder="$" />
+        <input type="text" class="input__bill"/>
         <h3 class="input__tip-title">Select Tip %</h3>
         <div class="input__tip-container">
           <button class="input__tip-buttons">5%</button>
@@ -33,10 +33,14 @@
           <input type="text" class="input__tip-custom" placeholder="Custom">
         </div>
       </section>
-      
+
       <section class="amount">
-        Number of People Tip Amount / person Total / person Reset
+          <h3 class="amount__people-title">
+            Number of People
+          </h3>
+          <input type="text" class="amount__people">
       </section>
+         Tip Amount / person Total / person Reset
     </main>
 
     <footer class="attribution">

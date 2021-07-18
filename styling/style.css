@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Space Mono', serif;
+  font-family: "Space Mono", serif;
   background-color: #c5e4e7;
 }
 
@@ -28,11 +28,11 @@ body {
   background-color: white;
   padding: 2.5rem;
   font-size: 1.25rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .input {
-  color: #00494d;
+  color: #5e7a7d;
 }
 
 .input__bill {
@@ -41,12 +41,16 @@ body {
   padding: 1rem;
   width: 100%;
   display: block;
-  margin: .75rem 0;
+  margin: 0.75rem 0;
   text-align: right;
   color: #00494d;
   font-size: 2rem;
   font-family: inherit;
   font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 5% 50%;
+  background-image: url(../images/icon-dollar.svg);
 }
 
 .input__bill::-webkit-input-placeholder {
@@ -103,8 +107,8 @@ body {
   background-color: #00494d;
   color: white;
   border-radius: 4px;
-  padding: .8rem;
-  letter-spacing: .1rem;
+  padding: 0.8rem;
+  letter-spacing: 0.1rem;
   font-family: inherit;
 }
 
@@ -124,19 +128,77 @@ body {
 }
 
 .input__tip-custom::-webkit-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
 }
 
 .input__tip-custom:-ms-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
 }
 
 .input__tip-custom::-ms-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
 }
 
 .input__tip-custom::placeholder {
+  color: #5e7a7d;
+}
+
+.amount {
+  margin-top: 3rem;
+}
+
+.amount__people-title {
+  color: #5e7a7d;
+}
+
+.amount__people {
+  border: none;
+  background-color: #f4fafa;
+  padding: 1rem;
+  width: 100%;
+  display: block;
+  margin: 0.75rem 0;
+  text-align: right;
   color: #00494d;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 5% 50%;
+  background-image: url(../images/icon-person.svg);
+}
+
+.amount__people::-webkit-input-placeholder {
+  color: #c5e4e7;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.amount__people:-ms-input-placeholder {
+  color: #c5e4e7;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.amount__people::-ms-input-placeholder {
+  color: #c5e4e7;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.amount__people::placeholder {
+  color: #c5e4e7;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.amount__people:focus {
+  outline: none;
 }
 
 .attribution {
