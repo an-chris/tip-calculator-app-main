@@ -36,7 +36,7 @@ $white: hsl(0, 0%, 100%);
   }
 
   &:focus {
-    outline: none;
+    outline-color: cyan;
   }
 }
 
@@ -127,6 +127,10 @@ body {
 
     &::placeholder {
       color: $grayish-cyan;
+    }
+
+    &:focus {
+      outline-color: cyan;
     }
   }
 }

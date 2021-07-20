@@ -82,7 +82,7 @@ body {
 }
 
 .input__bill:focus {
-  outline: none;
+  outline-color: cyan;
 }
 
 .input__tip-title {
@@ -143,6 +143,10 @@ body {
   color: #5e7a7d;
 }
 
+.input__tip-custom:focus {
+  outline-color: cyan;
+}
+
 .amount {
   margin-top: 3rem;
 }
@@ -198,7 +202,7 @@ body {
 }
 
 .amount__people:focus {
-  outline: none;
+  outline-color: cyan;
 }
 
 .amount__calculation {
