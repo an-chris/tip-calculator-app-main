@@ -201,12 +201,6 @@ body {
   outline: none;
 }
 
-.amount__calculation {
-  background-color: #00494d;
-  padding: 3rem 2rem;
-  border-radius: 15px;
-}
-
 .attribution {
   margin-top: 1rem;
   text-align: center;
