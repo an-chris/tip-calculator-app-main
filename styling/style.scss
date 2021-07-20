@@ -40,6 +40,9 @@ $white: hsl(0, 0%, 100%);
   }
 }
 
+// Breakpoint
+$lg: 64em; //1024px
+
 // Amount calculation mixin
 @mixin calculation {
   display: flex;
