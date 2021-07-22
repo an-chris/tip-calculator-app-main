@@ -9,3 +9,4 @@ const tenPercent = document.getElementById('five__percent');
 const fifteenPercent = document.getElementById('five__percent');
 const twentyFivePercent = document.getElementById('five__percent');
 const fiftyPercent = document.getElementById('five__percent');
+const reset = document.querySelector('.amount__calculation-reset');
