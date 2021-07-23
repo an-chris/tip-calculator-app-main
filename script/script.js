@@ -18,7 +18,14 @@ bill.addEventListener('change', function (e) {
   // e is the event, target is the element that triggered the event which was trigger by the input,
   // and the value is the value of the input element
   console.log(e.target.value);
-  document.querySelector('.amount__calculation-total-total').textContent = "$" + e.target.value;
+  let totalCalc = document.querySelector('.amount__calculation-total-total').textContent = '$' + e.target.value;
   console.log(e);
-})
+});
+
+// Calculate custom tip and display it
+tip.addEventListener('change', function (e) {
+  let tipCalc = document.querySelector('.amount__calculation-tip-total').textContent = + e.target.value / + document.querySelector('.amount__calculation-total-total').textContent.substring(1) * 100;
+  console.log(tipCalc);
+});
+
 
