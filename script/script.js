@@ -25,9 +25,14 @@ bill.addEventListener('change', function (e) {
 // Calculate custom tip and display it
 tip.addEventListener('change', function (e) {
   let tipCalc = document.querySelector('.amount__calculation-tip-total').textContent = '$' + e.target.value * document.querySelector('.amount__calculation-total-total').textContent.substring(1) / 100;
-  
   console.log(tipCalc);
 });
 
 
- 
+ // Divide bill/tip evenly by the number of people
+people.addEventListener('change', function (e) {
+  let divideBill = document.querySelector('.amount__calculation-total-total').textContent = '$' + document.querySelector('.amount__calculation-total-total').textContent.substring(1) / e.target.value;
+  let divideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + document.querySelector('.amount__calculation-tip-total').textContent.substring(1) / e.target.value;
+  console.log(divideBill, divideTip);
+  console.log(typeof(divideBill), typeof(divideTip));
+})
