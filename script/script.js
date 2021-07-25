@@ -33,6 +33,10 @@ tip.addEventListener('change', function (e) {
 people.addEventListener('change', function (e) {
   let divideBill = document.querySelector('.amount__calculation-total-total').textContent = '$' + document.querySelector('.amount__calculation-total-total').textContent.substring(1) / e.target.value;
   let divideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + document.querySelector('.amount__calculation-tip-total').textContent.substring(1) / e.target.value;
-  console.log(divideBill, divideTip);
-  console.log(typeof(divideBill), typeof(divideTip));
+  // console.log(divideBill, divideTip);
+  // console.log(typeof(divideBill), typeof(divideTip));
+  let roundDivideBill = document.querySelector('.amount__calculation-total-total').textContent = '$' + Math.round(100 * divideBill.substring(1)) / 100;
+  let roundDivideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + Math.round(100 * divideTip.substring(1)) / 100;
+  console.log(Math.round(100 * divideBill.substring(1)) / 100);
+  
 })
