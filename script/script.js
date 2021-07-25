@@ -3,8 +3,8 @@ const bill = document.querySelector('.input__bill');
 const billInput = bill.value;
 const people = document.querySelector('.amount__people');
 const peopleInput = people.value
-const tip = document.querySelector('.input__tip-custom');
-const tipInput = tip.value
+const customTip = document.querySelector('.input__tip-custom');
+const customTipInput = customTip.value
 // Buttons
 const fivePercent = document.getElementById('five__percent');
 const tenPercent = document.getElementById('five__percent');
@@ -23,7 +23,7 @@ bill.addEventListener('change', function (e) {
 });
 
 // Calculate custom tip and display it
-tip.addEventListener('change', function (e) {
+customTip.addEventListener('change', function (e) {
   let tipCalc = document.querySelector('.amount__calculation-tip-total').textContent = '$' + e.target.value * document.querySelector('.amount__calculation-total-total').textContent.substring(1) / 100;
   console.log(tipCalc);
 });
@@ -33,10 +33,7 @@ tip.addEventListener('change', function (e) {
 people.addEventListener('change', function (e) {
   let divideBill = document.querySelector('.amount__calculation-total-total').textContent = '$' + document.querySelector('.amount__calculation-total-total').textContent.substring(1) / e.target.value;
   let divideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + document.querySelector('.amount__calculation-tip-total').textContent.substring(1) / e.target.value;
-  // console.log(divideBill, divideTip);
-  // console.log(typeof(divideBill), typeof(divideTip));
   let roundDivideBill = document.querySelector('.amount__calculation-total-total').textContent = '$' + Math.round(100 * divideBill.substring(1)) / 100;
   let roundDivideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + Math.round(100 * divideTip.substring(1)) / 100;
-  console.log(Math.round(100 * divideBill.substring(1)) / 100);
-  
 })
+
