@@ -9,7 +9,7 @@ const customTipInput = customTip.value
 const fivePercent = document.getElementById('five__percent');
 const tenPercent = document.getElementById('ten__percent');
 const fifteenPercent = document.getElementById('fifteen__percent');
-const twentyFivePercent = document.getElementById('twenty-five_percent');
+const twentyFivePercent = document.getElementById('twenty-five__percent');
 const fiftyPercent = document.getElementById('fifty__percent');
 const reset = document.querySelector('.amount__calculation-reset');
 
@@ -18,6 +18,7 @@ bill.addEventListener('change', function (e) {
   // e is the event, target is the element that triggered the event which was trigger by the input,
   // and the value is the value of the input element
   let totalCalc = document.querySelector('.amount__calculation-total-total').textContent = '$' + e.target.value;
+  console.log(billInput);
 });
 
 // Calculate custom tip and display it
@@ -26,13 +27,41 @@ customTip.addEventListener('change', function (e) {
   console.log(tipCalc);
 });
 
+// Tip % buttons
 fivePercent.addEventListener('click', function () {
   const bill = document.querySelector('.input__bill');
   const billInput = bill.value;
   let tipFivePercent = document.querySelector('.amount__calculation-tip-total').textContent= '$' + parseInt(billInput) * .05;
   console.log(tipFivePercent);
-  console.log(typeof(tipFivePercent));
-  console.log(billInput);
+});
+
+tenPercent.addEventListener('click', function () {
+  const bill = document.querySelector('.input__bill');
+  const billInput = bill.value;
+  let tipTenPercent = document.querySelector('.amount__calculation-tip-total').textContent= '$' + parseInt(billInput) * .1;
+  console.log(tipTenPercent);
+});
+
+fifteenPercent.addEventListener('click', function () {
+  const bill = document.querySelector('.input__bill');
+  const billInput = bill.value;
+  let tipFifteenPercent = document.querySelector('.amount__calculation-tip-total').textContent= '$' + parseInt(billInput) * .15;
+  console.log(tipFifteenPercent);
+});
+
+twentyFivePercent.addEventListener('click', function () {
+  const bill = document.querySelector('.input__bill');
+  const billInput = bill.value;
+  let tipTwentyFivePercent = document.querySelector('.amount__calculation-tip-total').textContent= '$' + parseInt(billInput) * .25;
+  console.log(tipTwentyFivePercent);
+
+});
+
+fiftyPercent.addEventListener('click', function () {
+  const bill = document.querySelector('.input__bill');
+  const billInput = bill.value;
+  let tipFiftyPercent = document.querySelector('.amount__calculation-tip-total').textContent= '$' + parseInt(billInput) * .5;
+  console.log(tipFiftyPercent);
 });
 
  // Divide bill/tip evenly by the number of people
