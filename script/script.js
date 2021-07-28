@@ -72,6 +72,18 @@ people.addEventListener('change', function (e) {
   let roundDivideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + Math.round(100 * divideTip.substring(1)) / 100;
 });
 
+// Change reset button color if user types something into bill input
+bill.addEventListener('change', (e)=>{
+  if (!e.target.value){
+  reset.style.backgroundColor = "hsl(185, 41%, 84%)";}else{
+  document.querySelector('.amount__calculation-total-total').textContent = '$' + e.target.value;
+  console.log(billInput);}
+})
+
+
+
+// Reset the calculator 
+
 
 
 
