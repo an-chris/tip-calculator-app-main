@@ -85,5 +85,12 @@ reset.addEventListener('click', function () {
   document.querySelector('.amount__calculation-total-total').textContent = '$0.00';
 });
 
+// Reset input fields when reset is clicked
+function resetInputs() {
+  bill.value = '';
+  people.value = '';
+  customTip.value = '';
+}
+
 
 
