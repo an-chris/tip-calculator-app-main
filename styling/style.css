@@ -309,7 +309,7 @@ body {
 }
 
 .amount__calculation-reset:active {
-  background-color: #26c0ab;
+  background-color: #26c0ab !important;
 }
 
 .attribution {

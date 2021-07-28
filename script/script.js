@@ -5,6 +5,7 @@ const people = document.querySelector('.amount__people');
 const peopleInput = people.value
 const customTip = document.querySelector('.input__tip-custom');
 const customTipInput = customTip.value
+
 // Buttons
 const fivePercent = document.getElementById('five__percent');
 const tenPercent = document.getElementById('ten__percent');
@@ -12,6 +13,7 @@ const fifteenPercent = document.getElementById('fifteen__percent');
 const twentyFivePercent = document.getElementById('twenty-five__percent');
 const fiftyPercent = document.getElementById('fifty__percent');
 const reset = document.querySelector('.amount__calculation-reset');
+
 
 // Get bill value and display into total amount
 bill.addEventListener('change', function (e) {
@@ -72,12 +74,9 @@ people.addEventListener('change', function (e) {
   let roundDivideTip = document.querySelector('.amount__calculation-tip-total').textContent = '$' + Math.round(100 * divideTip.substring(1)) / 100;
 });
 
-// Change reset button color if user types something into bill input
-bill.addEventListener('change', (e)=>{
-  if (!e.target.value){
-  reset.style.backgroundColor = "hsl(185, 41%, 84%)";}else{
-  document.querySelector('.amount__calculation-total-total').textContent = '$' + e.target.value;
-  console.log(billInput);}
+// Change background color when bill input field contains numbers
+bill.addEventListener('input', event => {
+  reset.style.backgroundColor = event.target.value.trim() ?  'hsl(185, 41%, 84%)' : 'hsl(186, 14%, 43%)';
 })
 
 
