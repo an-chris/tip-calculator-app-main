@@ -20,7 +20,6 @@ bill.addEventListener('change', function (e) {
   // e is the event, target is the element that triggered the event which was trigger by the input,
   // and the value is the value of the input element
   let totalCalc = document.querySelector('.amount__calculation-total-total').textContent = '$' + e.target.value;
-  console.log(billInput);
 });
 
 // Calculate custom tip and display it
@@ -77,12 +76,14 @@ people.addEventListener('change', function (e) {
 // Change background color when bill input field contains numbers
 bill.addEventListener('input', event => {
   reset.style.backgroundColor = event.target.value.trim() ?  'hsl(185, 41%, 84%)' : 'hsl(186, 14%, 43%)';
-})
+});
 
 
-
-// Reset the calculator 
-
+// Set totals to 0 when reset is clicked
+reset.addEventListener('click', function () {
+  document.querySelector('.amount__calculation-tip-total').textContent = '$0.00';
+  document.querySelector('.amount__calculation-total-total').textContent = '$0.00';
+});
 
 
 
